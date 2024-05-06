@@ -1,0 +1,76 @@
+<?php 
+include 'includes/conn.php'; 
+include 'includes/session.php';
+unset($_SESSION['get_code']);
+unset($_SESSION['set_new_password']);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login as Admin</title>
+    <script src="https://kit.fontawesome.com/52d5e24716.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css">
+    
+<script>
+function validate_login_form(){
+       
+	   var password=document.login_form.pass.value;
+	   if(password.length<8){
+		   alert("Password length must have atleast 8 character..");
+		  return false;
+	   }else{
+		   return ture;
+	   }
+   }
+</script>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h2>Login Form</h2>
+        <center>
+            <?php
+                if(isset($_SESSION['error'])){
+                    $output='<h3>Error:'.$_SESSION['error'].'</h3>';
+                    echo $output;
+                    unset($_SESSION['error']);
+                }
+                ?>      
+        </center>
+            <form action="actions/verify.php" method="POST" onsubmit="return validate_login_form()" name="login_form">
+            <div class="form-item">
+            <i class="fa-solid fa-user"></i>
+                <input  type="email" name="email" id="text" placeholder="Email" required>
+            </div>
+
+            <div class="form-item">
+            <i class="fa-solid fa-lock"></i>
+                <input type="password" name="pass" id="password" placeholder="Password" required>
+
+            </div>
+
+            <button type="submit" name="login"> Login </button>
+        
+            <div class="options">
+
+        </div>
+            <p> <a href="reset_password.php">Forget Password?</a></p>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
