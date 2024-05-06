@@ -1,0 +1,480 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 10rem 0rem ;
+}
+.container p{
+  margin-left: 1.5rem;
+
+}
+.container .heading{
+    font-size: 4rem;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 900;
+    color:#FE6B59;
+    
+
+}
+.container .note{
+  font-size: 2rem;
+  color: darkcyan;
+  font-family: "Roboto", Sans-serif;
+
+}
+.container .main_room{
+    display: flex;
+    justify-content: space-between;  
+}
+.container  .main_room  .first{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 5px;
+    padding:10px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    transition: all ease 0.8s;
+    background-position: center;
+}
+.container  .main_room  .first a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    font-family: "Roboto", Sans-serif;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: all 0.4s ease;
+}
+.container  .main_room  .first span{
+  font-size: 2rem;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.div_form{
+  width: 35%;
+  border-radius: 1rem;
+  padding: 1rem;  
+  background-image: url(../images/home/form_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.container  .main_room  .first a:hover{
+    color: gold;
+}
+
+
+.div_form form{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+
+
+.div_form h3{
+font-size: 2.5rem;
+margin-top: .5rem;
+text-align: center;
+color: #FE6B59;
+font-family: "Roboto", Sans-serif;
+filter: drop-shadow(2px 4px 6px black);
+
+}
+
+.div_form form input,.div_form form select{
+padding: 1rem;
+margin-top: 1rem;
+font-size: 1.8rem;
+color:aqua;
+background-color: rgba(95, 92, 92, 0.651);
+border-radius: 1rem;
+outline: none;
+border-color: aqua;    
+
+
+}
+.div_form form input::placeholder{
+font-size: 2rem;
+color: rgb(255, 255, 255);
+}
+.div_form form .date{
+width: 14.5rem;
+}
+.div_form form input[type=date]{
+padding-left: 20px;
+}
+.div_form form label{
+font-weight: bolder;
+font-size: 1.8rem;
+color: azure;
+}
+.div_form form select{
+font-size: 2rem;
+width: fit-content;
+color: white;
+
+
+}
+.div_form form input[type=submit]{
+font-size: 2rem;
+margin: auto;
+margin-top: 1.5rem;
+width: 50%;
+font-weight: bolder;
+background-color: #FE6B59;
+color: white;
+cursor: pointer;
+}
+
+@media screen and (max-width: 1120px){
+  .div_form form .date{
+    width: 12rem;
+  }
+ 
+
+}
+@media screen and (max-width: 1024px){
+  .container{
+    padding: 3rem;
+  }
+  .container .heading{
+    font-size: 5rem;
+  }
+  .container .note{
+    font-size: 2rem;
+  }
+  .div_form form select {
+    font-size: 1.5rem;}
+    .div_form form input[type=submit]{
+      width: 70%;
+    }
+}
+
+
+  @media screen and (max-width: 860px){
+ 
+    .container{
+      padding: 2rem;
+    }
+    .container .heading{
+      font-size: 3.5rem;
+    }
+    .container .note{
+      font-size: 1.3rem;
+    }
+    .container .main_room .first{
+      width: 55%;
+    }
+    .main_room .div_form{
+      width: 39%;
+    }
+  }
+
+  @media screen and (max-width:760px) {
+    .container .main_room {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container .main_room .first{
+      height: 50rem;
+      width: 95%;
+    }
+  
+     .main_room .div_form {
+      width: 95%;
+    }
+    .main_room .div_form{
+      margin-bottom: 1.5rem;
+      padding: 10px;
+    }
+  }
+  @media screen and (max-width: 580px){
+    .container{
+      padding: .8rem;
+    }
+    .container .heading{
+      font-size: 2rem;
+    }
+    .container .note{
+      font-size: 1rem;
+    }
+    .container  .main_room  .first a{
+      font-size: 3rem;
+    }
+    .container  .main_room  .first span{
+      font-size: 1.5rem;
+
+    }
+
+    .div_form form select {
+      font-size: 2rem;
+
+    }
+
+
+  }
+  @media screen and (max-width:380px){
+.div_form form input[type=submit]{
+      width: fit-content;
+    }
+    .container .main_room .first {
+      height: 30rem;}
+  
+  } 
+  @media screen and (max-width:350px){
+    .div_form form select {
+      font-size: 1.5rem;
+
+    }
+  }
+
+
+
+.container  .main_room  .first:hover{
+    box-shadow: 5px 5px 10px 10px lightgrey;
+    border-radius: 2rem;
+
+}
+
+
+
+
+
+
+
+
+.other_rooms_heading{
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  color: #FE6B59;
+  font-family: "Roboto", Sans-serif;
+  margin-top: 2rem;
+
+}
+
+
+.other_rooms{
+  padding: 2rem 10rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.other_rooms a{
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+
+}
+.other_rooms .second,.third,.forth,.fifth,.sixth {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 30rem;
+  overflow: hidden;
+  margin-top: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+  position: relative;
+  align-items: center;
+  transition: all ease 0.6s;
+  background-position: center;
+}
+
+.other_rooms div a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem;
+}
+.other_rooms h3{
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  font-size: 3rem;
+  color:white;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.other_rooms p{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Roboto", Sans-serif;
+  color: white;
+}
+.other_rooms div:hover{
+  filter: drop-shadow(2px 4px 6px black);
+
+}
+@media screen and (max-width: 1024px){
+  .other_rooms{
+    padding: 2rem;
+  }
+  .other_rooms h3{
+    font-size: 2rem;}
+    .other_rooms p{
+      font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 800px){
+  .other_rooms .second,.third,.forth,.fifth,.sixth {
+    width: 40%;
+    margin: 1rem;
+    height:30rem;
+  }
+}
+@media screen and (max-width: 550px){
+  .other_rooms{
+    flex-direction: column;
+  }
+  .other_rooms .second,.third,.forth,.fifth,.sixth {
+    width: 93%;
+    margin: 1rem;
+    height:25rem;
+  }
+  .other_rooms {
+    padding: 0rem;
+}
+.other_rooms_heading {
+    font-size: 3rem;}
+    .other_rooms h3 {
+      font-size: 2rem;}
+
+  }
+
+
+  .container .details{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1c4e7ae0;
+    color: gold;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .details .points{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+  .details .explainations{
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: row;
+   
+  }
+ 
+  .details .points div{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    font-family: "Roboto", Sans-serif;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    transition:  all ease 0.6s;
+  }
+  .details .points div p{
+    margin: 1rem;
+    text-align: center;
+  }
+ 
+  .details .explainations div{
+    display: flex;
+    padding: 0.5rem;
+    font-family: "Roboto", Sans-serif;
+    display: none;
+  overflow:hidden;
+
+}
+
+
+  .details .explainations .exps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .details .explainations .exp{
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    flex-direction: column;
+    animation: anima 1.5s;
+  }
+  @keyframes anima{
+    from{
+  filter: opacity(0);
+    }to{
+      filter: opacity(1);
+       
+    }
+  }
+  .details .explainations .exp i{
+  font-size: 5rem;
+  color: gold;}
+
+
+
+
+  .details .points div:hover{
+
+    background-color: #00000030;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+  }
+  .details .points .active{
+   
+    background-color: #00000030;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    filter: drop-shadow(2px 6px 6px black);
+  }
+
+        .details .explainations .active{
+          display: flex;
+          width:100%;
+          height: 100%;
+          background-color: #00000030;
+          border-radius: 15px;
+          color: white;
+
+        }
+
+        @media screen and (max-width: 500px){
+        .details .points {
+          font-size: 1.5rem;}
+        
+          .details .explainations .active {
+            border-radius: 0 0 15px 15px;}
+
+            .container .main_room .first a{
+              font: 1.5rem;
+
+            }
+            .container .main_room .first span {
+              font-size: 12px;
+          }
+          .div_form form input, .div_form form select {
+            font-size: 17px;
+            padding: 0.5rem;
+            
+          } 
+          .other_rooms_heading {
+            font-size: 2rem;
+        }
+
+        }

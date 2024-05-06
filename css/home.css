@@ -1,0 +1,1005 @@
+
+.forth_part{
+    display: flex;
+    background-color: white;
+    padding: 5rem 10rem 5rem 10rem;
+}
+  .forth_part .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 50%;
+    font-size: 1.5rem;
+    padding:5rem;
+  }
+  
+  .forth_part .div_form{
+    width: 35%;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+    background-image: url(../images/home/form_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .forth_part .description img{
+    width:30rem;
+    height: auto;
+  }
+  .forth_part .description p{
+    text-align: justify;
+    padding: .5rem;
+    font-size: 2rem;
+    }
+    .forth_part .div_form form{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        margin-top: 1.5rem;
+      }
+   
+  
+  .forth_part .div_form h3{
+    font-size: 2.5rem;
+    margin-top: .5rem;
+      text-align: center;
+      color: #FE6B59;
+      font-family: "Roboto", Sans-serif;
+    }
+    .forth_part .div_form form input, .forth_part .div_form form select{
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 1.8rem;
+      color:aqua;
+      background-color: rgba(95, 92, 92, 0.651);
+      border-radius: 1rem;
+      outline: none;
+      border-color: aqua;    
+      
+  
+    }
+    .forth_part .div_form form input::placeholder{
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+    }
+    .forth_part .div_form form .date{
+      width: 13rem;
+    }
+    
+    .forth_part .div_form form label{
+      font-weight: bolder;
+      font-size: 1.8rem;
+      color: azure;
+    }
+    .forth_part .div_form form select{
+     font-size: 2rem;
+     width: fit-content;
+  
+     color: white;
+
+  
+    }
+    .forth_part .div_form form input[type=submit]{
+      font-size: 2rem;
+      margin: auto;
+      margin-top: 1.5rem;
+      width: 50%;
+      font-weight: bolder;
+      background-color: #FE6B59;;
+      color: white;
+      cursor: pointer;
+
+    }
+
+    @media screen and (max-width: 1024px){
+      .forth_part{
+        padding: 1rem;
+      }
+      .forth_part .div_form {
+        width: 48%;
+      }
+      .forth_part .div_form div{
+        flex-direction: column;
+      }
+      .forth_part .div_form form input[type=submit]{
+        width: 70%;
+      }
+    }
+
+    @media screen and (max-width:850px) {
+      .forth_part .div_form form .date{
+        width: 12rem;
+      }
+    }
+
+
+    @media screen and (max-width:650px) {
+      .forth_part{
+        flex-direction: column;
+      }
+      .forth_part .div_form{
+        width: 95%;
+        width: fit-content;
+      }
+      .forth_part .div_form form div {
+        flex-direction: column;
+      }
+      .forth_part .description, .forth_part .div_form{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        padding: 10px;
+      }
+    }
+    @media screen and (max-width:480px){
+      .forth_part .div_form form input[type=submit]{
+        width: 80%;
+      }
+      .forth_part .div_form form select{
+        font-size: 1.5rem;
+   
+     
+       }
+       .forth_part .description img {
+        width: 25rem;
+    }
+
+
+    } 
+  
+  
+  
+  
+  .services{
+    display: flex;
+    padding:5rem 0rem 0rem 0rem;    
+  }
+  .first_service{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .second_service{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+ 
+
+  }
+  .third_service{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+
+  }
+  .services i{
+    margin:1.5rem ;
+    font-size: 6rem;
+    color: #FE6B59;;
+  }
+  .services p{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+  }
+  .services  h3{
+    font-size: 3rem;
+    color: #FE6B59;
+    font-family: "Roboto", Sans-serif;
+
+
+  }
+  @media screen and (max-width: 1024px) {
+  .services {
+  flex-direction: column;
+  padding-bottom: 2rem;
+  }
+  .first_service{
+width: auto;  
+  }
+  .second_service{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  
+  
+  }
+  .third_service{
+    width: auto;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+  
+  }
+  }
+  @media screen and (max-width: 480px) {
+    .services {
+    padding: 1rem;
+    }
+    .services h3 {
+      font-size: 2rem;
+    }
+    .services i {
+    
+      font-size: 7rem;
+  
+  }
+  }
+
+
+.offer_part{
+  padding: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+.offers_heading{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+ 
+
+}
+.offers_heading h2{
+  font-family: "Roboto", Sans-serif;
+  color: #FE6B59;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.offers_heading hr{
+  border-color: #FE6B59;
+  width: 70%;
+}
+
+
+
+    .offers{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: auto;
+
+    }
+    .offers .offer{
+      position: relative;
+      margin: 1rem;
+      width: 34rem;
+      height: 40rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      transition: all ease 0.3s;
+    
+    }
+    .offers .offer img{
+      border-radius: 1.5rem;
+      height: 100%;
+      width: 100%;
+      border: 2px solid gainsboro;
+      transition: all ease 0.3s;
+      filter: brightness(0.7);
+     
+
+    }
+    .offers .offer .content{
+      border-radius: 1.5rem;
+      position: absolute;
+      transition: all ease 0.6s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+    }
+    .offers .offer .offer_name h3{
+      display: flex;
+    }
+   
+    .offers .offer .offer_name a{
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.5rem;
+      color: white;
+      filter: drop-shadow(2px 4px 6px black);
+      font-weight: 900;
+    }
+
+    .offers .offer .offer_comment {
+      padding: 1rem;
+    }
+    .offers .offer .offer_comment p{
+      color: white;
+      text-align: center;
+      font-size: 1.8rem;
+      filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .offers .offer img:hover{
+      filter: brightness(0.8);
+    }
+    
+  .offers .offer .content:hover{
+    background: #0000006e;
+  }
+  .offer_part .view_more{
+    margin: 1rem 0rem 3rem 0rem;
+        font-size: 2rem;
+    text-decoration: none;
+    border: 2px solid #7a7a76;
+    padding: 1rem;
+    color: black;
+    background: #FE6B59;
+    border-radius: 15px;
+    font-weight: 500;
+    font-family: "Roboto", Sans-serif;
+    transition: all ease 0.3s;
+  }
+  .offer_part .view_more:hover{
+    filter: drop-shadow(2px 4px 6px black);
+    box-shadow: 5px 5px 5px #FE6B59;
+ 
+}
+
+  @media screen and (max-width: 1024px){
+    .offer_part{
+      padding: 3rem;
+      padding-bottom: 0;
+    }
+    .offers{
+     flex-direction: column;
+    }
+    .offers .offer{
+      width: 100%;
+      height: 50rem;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .offer_part{
+      padding: 1rem;}
+      .offers .offer {
+        width: 100%;
+        height: 30rem;}
+      .offers_heading {
+        font-size: 1.5rem;
+       
+    }
+      .services p{
+        padding:1rem;
+      }
+      .first_service,.second_service,.third_service{
+        margin:1rem;
+      }
+      .offers .offer .offer_name a {
+        
+        font-size: 2.5rem;
+  }
+  .offer_part .view_more {
+ 
+    font-size: 1.5rem;}
+
+
+
+
+}
+
+
+
+
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .slide-container{
+  
+    position: relative;
+    width:  100%;
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   background-color: white; }
+
+
+    .slide-container span{
+      margin-top: -65rem;
+    }
+  .slide-container .gallery_heading{
+    position: absolute;
+    top: 1rem;
+    z-index: 0;
+
+    color: #FE6B59;;
+    font-size: 2.5rem;
+  }
+  .slide-container .gallery_heading h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  }
+  .slide-container .gallery_heading h2 hr{
+    width:70%;
+    border-color: #FE6B59;
+  }
+ .slide-container .image-slider{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+
+  }
+  .slide-container .slide-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    transition:  all ease 5s;
+    position: relative;
+ 
+
+  }
+  .slide-container .img{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    transition: 0.5s;
+    filter: saturate(10%);
+
+  }
+  .slide-container .slide-div h3{
+    position: absolute;
+    font-size: 2rem;
+    color:white;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    bottom: 2rem;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+   .slide-div .button{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transition: 0.5s;
+    background-color: rgb(0,0,0,.4);
+
+
+  }
+ .slide-div .button:hover{
+    background-color: rgb(0,0,0,.2);
+
+  }
+  #slider-span1:target ~ .image-slider #img1,#slider-span1:target ~ .image-slider #button-1{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+
+  #slider-span2:target ~ .image-slider #img2,#slider-span2:target ~.image-slider #button-2{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span3:target ~ .image-slider #img3,#slider-span3:target ~ .image-slider #button-3{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span4:target ~ .image-slider #img4, #slider-span4:target ~ .image-slider #button-4{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span4:target ~ .image-slider #img4, #slider-span4:target ~ .image-slider #button-4{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span5:target ~ .image-slider #img5, #slider-span5:target ~ .image-slider #button-5{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span6:target ~ .image-slider #img6,#slider-span6:target ~ .image-slider #button-6{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+  #slider-span7:target ~ .image-slider #img7,#slider-span7:target ~ .image-slider #button-7{
+    width: 250px;
+    height: 380px;
+    background-color: transparent;
+    filter: saturate(100%); 
+  }
+
+  #slider-span1:target ~ .image-slider{ 
+    left:780px
+
+  } 
+  #slider-span2:target ~ .image-slider { 
+    left: 520px;
+  } 
+  #slider-span3:target ~ .image-slider{ 
+    left:260px
+
+  } 
+
+ 
+  #slider-span5:target ~ .image-slider{ 
+    left:-260px
+  } 
+  #slider-span6:target ~ .image-slider {  
+    left: -520px;
+  } 
+  #slider-span7:target ~ .image-slider { 
+    left:-780px
+  } 
+
+  .slide-container .view_more{
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 2px solid #7a7a76;
+    padding: 1rem;
+    color: black;
+    background:#FE6B59;
+    border-radius: 15px;
+    font-weight: 500;
+    font-family: "Roboto", Sans-serif;
+    transition: all ease 0.3s;
+    position: absolute;
+    bottom: 0.4rem;
+  }
+  .slide-container .view_more:hover{
+    filter: drop-shadow(2px 4px 6px black);
+    box-shadow: 5px 5px 5px #FE6B59;
+ 
+}
+@media screen and (max-width: 480px){
+  .slide-container .gallery_heading{
+    font-size: 1.5rem;
+  }
+  .slide-container .img {
+
+    width: 180px;
+    height: 235px;}
+    .slide-div .button {
+      width: 180px;
+      height: 235px;}
+      .slide-container .slide-div {
+       
+        margin: 0 20px 0 20px;}
+
+        #slider-span1:target ~ .image-slider #img1, #slider-span1:target ~ .image-slider #button-1 {
+          width: 185px;
+          height: 265px;}
+          #slider-span2:target ~ .image-slider #img2, #slider-span2:target ~ .image-slider #button-2 {
+            width: 185px;
+            height: 265px;}
+            #slider-span3:target ~ .image-slider #img3, #slider-span3:target ~ .image-slider #button-3 {
+              width: 185px;
+              height: 265px;}
+              #slider-span4:target ~ .image-slider #img4, #slider-span4:target ~ .image-slider #button-4 {
+                width: 185px;
+                height: 265px;}
+                #slider-span5:target ~ .image-slider #img5, #slider-span5:target ~ .image-slider #button-5 {
+                  width: 185px;
+                  height: 265px;}
+                  #slider-span6:target ~ .image-slider #img6, #slider-span6:target ~ .image-slider #button-6 {
+                    width: 185px;
+                    height: 265px;}
+                    #slider-span7:target ~ .image-slider #img7, #slider-span7:target ~ .image-slider #button-7 {
+                      width: 185px;
+                      height: 265px;}
+
+
+
+                      
+  #slider-span1:target ~ .image-slider{ 
+    left:660px
+
+  } 
+  #slider-span2:target ~ .image-slider { 
+    left: 440px;
+  } 
+  #slider-span3:target ~ .image-slider{ 
+    left:220px
+
+  } 
+
+ 
+  #slider-span5:target ~ .image-slider{ 
+    left:-220px
+  } 
+  #slider-span6:target ~ .image-slider {  
+    left: -440px;
+  } 
+  #slider-span7:target ~ .image-slider { 
+    left:-660px
+  } 
+
+  .slide-container .slide-div h3 {
+   
+    font-size: 2rem;}
+    .slide-container {
+
+      height: 40rem;}
+      .slide-container .image-slider {
+        margin-top: 2rem;}
+}
+
+
+
+
+
+
+.specilities{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  justify-content: center;
+  align-items: center;
+  background: white;
+
+}
+.specilities div{
+  width: 100%;
+  display: flex;
+  padding: 3rem;
+  justify-content: space-between;
+}
+.specilities div img{
+  width: 50rem;
+  height: 35rem;
+  padding: 1rem;
+  background-color: white;
+}
+.specilities div div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.specilities div div h3{
+  color: #FE6B59;;
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  font-family: "Roboto", Sans-serif;
+
+}
+.specilities div div p{
+  width: 100%;
+  text-align: justify;
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px){
+  .specilities{
+    padding: 3rem;
+  }
+.specilities div img{
+  width: 40rem;
+}
+.specilities div{
+  padding: 2rem;
+}
+
+
+}
+@media screen and (max-width: 800px){
+  .specilities div img{
+    width: 30rem;
+    height: 30rem;
+  }
+  .specilities div{
+    padding: 1rem;
+  }
+  
+}
+@media screen and (max-width:740px){
+  .specilities .surrounding,.specilities .outdoor{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .specilities .food,.specilities .meeting{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+  }
+  .specilities div img{
+  width: 100%;
+  height: 35rem;
+  }
+}
+@media screen and (max-width:660px){
+  .specilities{
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 480px){
+.specilities {
+    padding: 1rem;
+}
+.specilities div {
+  padding: 0rem;
+}
+.specilities div div h3 {
+  font-size: 2rem;
+}
+.specilities div img {
+  height: 20rem;}
+}
+
+.event{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  flex-direction:column;
+  overflow:hidden;
+  height:900px;
+  color:#FE6B59;
+
+}
+.event .content{
+  padding:10rem;
+    position:absolute;
+  }
+  .event .content h1{
+  font-size: 5rem;
+  filter: drop-shadow(2px 4px 6px black);  
+}
+  .event .content h3{
+    font-size: 2rem;
+    filter: drop-shadow(2px 4px 6px black);
+    }
+  .event .book_now_div{
+    width:100%;
+    position:absolute;
+    bottom:0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #023651;
+    padding:1.8rem 10rem;
+    color:#FE6B59;
+    font-weight:bolder;
+    font-size: 2rem;
+  }
+  .event .book_now_div p{
+    font-size: 2.5rem;
+  }
+  body{
+    background-image: url(../images/gallery/chairs.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .event .book_now_div a{
+  border: 2px solid #FE6B59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #FE6B59;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+
+  }
+
+  .event .book_now_div a:hover{
+    box-shadow: 2px 3px 5px  #FE6B59;;
+  }
+
+  @media screen and (max-width:740px){
+    .event .content{
+      padding:3rem;
+    }
+    .event .book_now_div{
+      padding: 2rem 3rem;
+    }
+   
+  }
+  @media screen and (max-width:480px){
+    .event .book_now_div{
+      flex-direction: column;
+    }
+    .event .book_now_div a{
+      margin-top: 1rem;
+    }
+    .event .content h1{
+      font-size: 3.5rem;
+     
+    }
+      .event .content h3{
+        font-size: 1.5rem;
+        
+        }
+        .event{
+        height: 600px;
+  }
+}
+  
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  font-size: 2.5rem;
+}
+.slideshow-container h3{
+  text-align:center;
+  color:#FE6B59 ;
+  padding-top:2rem;
+}
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.dot-container .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+
+@media screen and (max-width: 500px){
+  .forth_part .description img {
+    width: 15rem;
+}
+.forth_part .description p{
+  font-size: 13px;
+}
+
+
+.forth_part .div_form form input, .forth_part .div_form form select{
+  font-size: 17px;
+}
+.offers .offer .offer_comment p{
+  font-size: 14px;
+}
+.services i{
+  font-size: 2rem;
+}
+.services p{
+  font-size: 13px;
+}
+.specilities div div p{
+  font-size: 1rem;
+}
+.event .content h1 {
+  font-size: 2.5rem;
+}
+.event {
+  height: 500px;
+}
+.event .book_now_div p {
+  font-size: 1.5rem;
+}
+.event .book_now_div a{
+  padding: 0.5rem;
+}
+.slide-container h3{
+  font-size: 18px;
+}
+q {
+  font-size: 12px;
+  display: inline-flex;
+}
+.mySlides{
+  padding: 60px;
+}
+.author{
+  font-size: 17px;
+}
+}

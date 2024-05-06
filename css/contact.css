@@ -1,0 +1,333 @@
+
+.container{
+    background-image: url(../images/rooms/delux_single.jpg);
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 4rem;
+    font-size: large;
+
+ }
+ header h1{
+    font-family: "Roboto", Sans-serif;
+    font-size: 3.5rem;
+
+ }
+
+.content{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+.content-form section {
+    margin-top: 2rem;
+}
+.content form{
+    width: 40%;
+    padding: 2rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    position: relative;
+}
+
+section i{
+    font-size:3.5rem;   
+    padding: 1rem;
+}
+section h2{
+    margin-top: 1rem;
+}
+section a{
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+}
+
+
+
+
+ .contact-form input{
+
+    background-color: transparent;
+    border: none;
+    border: transparent;
+    margin: 23px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+    border-radius: 10px;
+}
+.contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    font-weight: bolder;
+}
+ .contact-form input:focus ~span{
+    transform: translateY(-16px);
+    pointer-events: none;
+}
+.contact-form textarea{
+    background-color: transparent;
+    margin: 2.3rem;
+    border: none;
+    font-size: 1.7rem;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+.contact-form textarea ~ span
+{ font-weight: bolder;
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+}
+.contact-form textarea:focus ~span{
+    transform: translateY(-16px);
+    pointer-events: none;
+}
+.contact-form input[type=submit]{
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-size: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    cursor: pointer;
+  
+}
+.contact-form input[type=submit]:hover{
+
+    color: black;
+    background-color: #FE6B59;
+}
+
+.media{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+.media li{
+    margin: 20px 30px;
+}
+ .media li a{
+    color: white;
+    
+ }
+ .media li a:hover{
+    color: rgb(223, 219, 219);
+ }
+ .content img{
+    display: none;
+ }
+
+@media screen and (max-width: 750px){
+    header h1{
+        font-family: "Roboto", Sans-serif;
+        font-size: xx-large;}
+    .content{
+        flex-direction: column;
+    }
+    
+    .content-form{
+        flex-direction: row;
+        font-size: 1.5rem;
+        justify-content: space-around;
+    }
+    .content form{
+        width: 50%;
+    }
+    .content img{
+        position: absolute;
+        bottom: 22rem;
+        right: 5rem;
+        height: 30rem;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem
+    }
+
+}
+@media screen and (max-width: 580px){
+    .container{
+        padding: 2rem;
+    }
+    .content form{
+        width: 100%;
+        background-image:url(../images/contact/mail.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 2rem;
+        margin-top: 3rem;
+        background-position-x: center;
+    }
+    .contact-form input ~ span{
+        color: white;
+        font-family: "Roboto", Sans-serif;
+        font-style: bolder;
+        top: -20px;
+    }
+    .contact-form textarea ~ span{
+        color: white;
+        font-family: "Roboto", Sans-serif;
+        font-style: bolder;   
+        top: -20px; 
+    }
+    .content img{
+       display: none;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .content-form{
+        flex-wrap: wrap;
+    }
+    .media{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header{
+        font-size: 12px;
+    }
+    section h2 {
+        font-size: 17px;
+    }
+    section i{
+        font-size: 2rem;
+    }
+    section p{
+        font-size: 10px;
+        text-decoration: none;
+    color: black;
+    font-weight: 900;
+        
+    }
+    .contact-form input, .contact-form textarea{
+        margin: 0;
+        padding: 0px;
+        font-size: 20px;
+    }
+    .contact-form {
+        margin-top: 5rem;
+    
+    }
+    
+
+
+
+}
+
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding: 5rem;
+}
+.lumbini,.border{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem;
+
+
+
+}
+.location .content{
+    margin: 0;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.location .content h1{
+    text-align: center;
+    color: gold;
+    margin-bottom: 2rem;
+    font-size: 3rem;}
+.location .content h3{
+    color: gold;
+    font-size: 3rem;
+}
+.location .content p{
+    text-align: justify;
+    color: white;
+    font-size: 2rem;
+}
+.location  img{
+    height: 40rem;
+    width:50rem;
+}
+@media screen and (max-width: 900px){
+.location .lumbini{
+    flex-direction:column ;
+
+
+}
+.location .border{
+    flex-direction: column-reverse;
+
+}
+.location .content{
+    width: 100%;
+}
+.location img{
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+}
+}
+@media screen and (max-width: 650px){
+.location{
+    padding: 3rem;
+}
+.lumbini,.border{
+    padding: 1rem;
+}
+}
+@media screen and (max-width: 500px){
+    .location{
+        padding: 2rem;
+    }
+    .lumbini,.border{
+        padding: 0;
+
+    }
+    .border{
+        margin-top: 19px;
+    }
+    .location .content h1{
+        font-size: 2rem;
+    }
+    .location .content h3{
+        font-size: 1.8rem;
+    }
+    .location .content p{
+        font-size: 15px;
+    }
+    .content-form{
+        padding: 10px;
+    }
+}

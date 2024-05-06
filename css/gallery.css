@@ -1,0 +1,228 @@
+.gallery_container{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 10rem;
+background-color: white;
+}
+.gallery_container h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Roboto", Sans-serif;
+
+}
+.gallery_container h2{
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+
+}
+.gallery_container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    justify-content: space-evenly;
+}
+.gallery_container .gallery .image{
+    position: relative;
+    width: 23%;
+    height: 25rem;
+    margin:1rem;
+    cursor: zoom-in;
+}
+.gallery_container .gallery .image img{
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+    transition:  all ease 0.3s;
+}
+.gallery_container .gallery .image p{
+    position: absolute;
+    bottom: 2rem;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", Sans-serif;
+    color: white;
+    filter: drop-shadow(2px 4px 6px black);
+
+}
+@media screen and (max-width: 1024px){
+    .gallery_container{
+        padding: 4px;
+    }
+    .gallery_container .gallery .image{
+        width: 45%;
+        height: 35rem;
+    }}
+    @media screen and (max-width: 800px){
+    .gallery_container{
+            padding: 3px;
+        }
+        .gallery_container h1{
+            font-size: 6rem;
+        }
+        .gallery_container h2{
+            font-size: 4rem;}
+        .gallery_container .gallery .image{
+            width: 45%;
+            height: 30rem;
+        }}
+    @media screen and (max-width: 700px){
+            .gallery_container{
+                padding: 2px;
+            }
+            .gallery_container h1{
+                font-size: 5rem;
+            }
+            .gallery_container h2{
+                font-size: 3rem;}
+            .gallery_container .gallery .image{
+                width: 45%;
+                height: 25rem;
+            }}
+            @media screen and (max-width: 700px){
+            .gallery_container{
+                    padding: 1px;
+                }
+                .gallery_container h1{
+                    font-size: 3.5rem;
+                }
+                .gallery_container h2{
+                    font-size: 2.5rem;}
+                .gallery_container .gallery .image{
+                    width: 90%;
+                    height: 30rem;
+                }}
+
+.gallery .image img:hover{
+    filter: brightness(0.7);
+}
+
+
+@media screen and (max-width: 480px){
+
+.gallery_container .gallery .image {
+    width: 90%;
+    height: 25rem;
+}}
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0,0.5);
+   
+}
+@keyframes animate{
+    from{
+         height: 0%;
+    width: 0%;
+      
+    }
+    to{
+        height: 100%;
+        width: 80%;
+    }
+}
+.modal-content{
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: animate 0.6s;
+}
+.modal .modal-content .modal-header{
+    width: 100%;
+    font-size: 4rem;
+    padding: 0 2rem 0 2rem;
+    font-family: "Roboto", Sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    color:red;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+
+}
+.modal .modal-content .modal-header h3{
+    font-family: "Roboto", Sans-serif;
+font-size: 5rem;
+cursor: pointer;
+}
+.modal .modal-content .modal-body img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+  
+}
+.modal-body{
+    width: 100%;
+    height: 90%;
+    position: relative;
+
+}
+.modal-body .image_name{
+    position: absolute;
+    font-size: 3rem;
+    width: 100%;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.modal-body .image_name h3{
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 500px){
+    @keyframes animate{
+        from{
+             height: 0%;
+        width: 0%;
+          
+        }
+        to{
+            height: 60%;
+            width: 88%;
+        }
+    }
+.modal-content {
+    width:88%;
+
+    height: 60%;}
+
+.gallery_container h2 {
+    font-size: 12px;
+    padding: 12px;
+}
+.gallery_container h1 {
+    font-size: 2.5rem;
+}
+.gallery_container .gallery .image p{
+    font-size: 2rem;
+}
+.modal-body .image_name h3 {
+   
+    font-size: 2rem;
+}.modal .modal-content .modal-header h3 {
+    font-size: 3rem;
+}
+
+}

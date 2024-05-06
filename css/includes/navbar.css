@@ -1,0 +1,115 @@
+
+.navbar{
+    position: sticky;
+    width: 100%;
+    height:5.2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    top: 0px;
+    z-index: 1;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+
+  
+  .navbar ul{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: end;
+    
+  
+  }
+  .navbar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem 0 1rem;
+   
+  }
+  .navbar ul li:first-child{
+padding: 0;
+  }
+
+  .navbar ul li a{
+  
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #575a5d;
+    border-radius: 1rem;
+    padding: .7rem 1.3rem;
+    transition: all 1s ease;
+  }
+  .navbar ul li a:hover{
+
+    color: #FE6B59;
+    
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  .navbar .active{
+    color: #FE6B59;
+  }
+  .navbar ul li:last-child{
+    padding-right: 2rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+   
+    .navbar a{
+      display: none;
+      
+      transition: all ease 5s;
+  }
+  .navbar .icon{
+    display: block;
+  }
+      .navbar ul{
+        flex-direction: row-reverse;
+      }
+    }
+  
+  @media screen and (max-width: 600px) {
+    .responsive{
+      height: 26.2rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+        }
+   .responsive ul {
+    flex-direction:column;
+    width: 100%;
+    align-items: start;
+   }
+   .responsive ul li:first-child{
+    background-color: #ffd7004a;
+    border-radius: 0.5rem;
+   }
+   .responsive ul li{
+    
+    padding: 0;
+    width: 100%;
+    justify-content: start;
+   }
+   .responsive ul li:first-child{
+    justify-content: end;
+   }
+     
+      .responsive ul li a{
+        display: block;
+      }
+
+    }
+  
+  
+  
+  
+  

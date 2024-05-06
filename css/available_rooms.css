@@ -1,0 +1,601 @@
+*{
+    padding:0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri' , 'Trebuchet MS', sans-serif;    
+}
+html{
+  font-size: 18px;
+}
+p{
+  margin: 0;
+}
+.main{
+    padding: 2rem 6rem 2rem 6rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: darkgrey;
+    
+
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.logo img{
+    height: 8rem;
+    padding: 0.5rem;
+    
+}
+
+.logo p{
+    font-size: 15px;
+    font-family: auto;
+}
+
+
+.check_availibility {
+    display: flex;
+    justify-content: space-evenly;
+        align-items: center;
+   background-color: #3385b1;
+    padding:0.5rem 4rem;
+    flex-wrap: wrap;
+    width: 100%;
+
+    
+  }
+  
+  .check_availibility input{
+  
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+  .check_availibility select{
+   
+    padding: 0.3rem;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .check_availibility .date{
+    width:7rem;
+  }
+  
+  .check_availibility input::placeholder{
+    font-size: 1rem;
+    color: black
+  }
+  
+  .check_availibility input[type=submit]{
+    background-color: #FE6B59;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media screen and (max-width: 1024px){
+    .check_availibility{
+      padding: 0.5rem 1.5rem;
+    }}
+  @media screen and (max-width: 800px){
+    .check_availibility form{
+      justify-content: space-evenly;
+    }
+  
+    .check_availibility input,.check_availibility form select{
+      margin-top: 0.3rem;
+    }
+  }
+
+.available_rooms{
+    padding: 8px;
+    width: 100%;
+    background-color: antiquewhite;
+    border: 2px solid;
+
+}
+.available_rooms .room{
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid ;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.room .img{
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  margin:15px 25px 0 15px;
+ 
+}
+.img img{
+  height: 160px;
+  width: 100%;
+}
+.room .img div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.img p{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img span{
+  margin-left: 5px;
+}
+.img button{
+  padding: 0 5px 0 5px;
+  
+}
+ .room_details{
+  width: 75%;
+}
+ .room_details .header{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+  margin: 0;
+}
+.header h3{
+font-size: 35px;
+margin: 5px;
+font-family: ui-sans-serif;
+}
+ .room_details .price{
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ .room_details .price_as_person {
+  display: flex;
+  margin-right: 0.5rem;
+  background-color: slategrey;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+
+.room_details .services{
+  display: flex;
+  align-items: center;
+}
+.services .comment, .service{
+  margin-right: 0.5rem;
+  
+  display: flex;
+}
+.services .comment{
+  justify-content: space-between;
+  align-items: center;
+}
+.services .service{
+  width: fit-content;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.comment span ,.service span{
+  margin-left: 5px;
+  line-height: initial;
+}
+.main_services{
+display: flex;
+flex-wrap: wrap;
+}
+.bottom{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom select{
+  padding: 2px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bottom .person{
+  display: flex;
+  align-items: center;
+}
+.room_available span{
+  background: #e2e3ed;
+  padding: 5px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.rate{
+  background-color: white;
+  height: 65px;
+  font-weight: bold;
+  outline: dotted;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.room_details .book{
+  background-color: goldenrod;
+  margin: 5px;
+
+}
+@media screen and (max-width: 900px){
+  .main{
+    padding:1.5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 730px){
+  .main{
+    padding: 1rem 1rem;
+  }
+  .available_rooms .room{
+  flex-direction: column;
+  align-items: center;
+
+  }
+  .room .img{
+    align-items: center;
+    width: 95%;
+    margin: 0;
+  }
+  .img img{
+    width: 100%;
+    height: 250px;
+  }
+  .img div{
+    width: 90%;
+  }
+  .room .room_details{
+    width: 95%;
+    align-items: center;
+  }
+  
+}
+
+
+.mdl{
+  background-color: #7c7c7cf7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  overflow: scroll;
+
+  
+}
+.mdl-dialog{
+  background-color: white;
+  margin: 1rem auto;
+  border-radius: 10px;
+  position: relative;
+    animation: animaa 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    
+
+}
+@keyframes animaa{
+  from{ top:-100vh;
+  }
+  to{
+    top:0;
+
+  }
+}
+.mdl-content{
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+
+}
+.mdl-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mdl-header h4{
+  margin:0;
+}
+.mdl-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 5px;
+}
+.mdl-footer{
+  display: flex;
+  justify-content: end;
+  width: 99%;
+}
+.mdl-body img{
+  height: 200px;
+}
+.mdl-body p{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-top: 10px;
+}
+.mdl-footer button{
+  color: red;
+}
+@media screen and (max-width: 350px){
+  .main{
+    padding: 1rem 0.5rem;
+  }
+  .bottom{
+    flex-direction: column;
+    align-items: end;
+  }
+  .bottom .select{
+    width: 100%;
+  }
+  .bottom .rate{
+    margin-top: 10px;
+  }
+  .price_as_person{
+    width: 45%;
+  }
+  
+}
+
+
+
+
+
+
+.booking_form{
+  background-color: #7c7c7cf7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  overflow: scroll;
+
+  
+}
+.booking_form-dialog{
+  background-color: white;
+  margin: 1rem auto;
+  border-radius: 10px;
+  position: relative;
+    animation: anima 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+
+}
+@keyframes anima{
+  from{ top:-100vh;
+  }
+  to{
+    top:0;
+
+  }
+}
+.booking_form-content{
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+
+}
+.booking_form-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking_form-header h4{
+  margin:0;
+}
+.booking_form-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.booking_form-footer{
+  display: flex;
+  justify-content: end;
+  width: 99%;
+}
+.booking_form-body img{
+  height: 250px;
+}
+.booking_form-body p{
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-top: 10px;
+}
+.booking_form-footer button{
+  color: red;
+}
+@media screen and (max-width: 530px){
+  .booking_form-dialog{
+    width: 90%;
+  }
+
+}
+.available_rooms .room{
+  background-color: #3385b16e;;
+  padding: 10px;
+}
+
+.mdl_data{
+  overflow:scroll;
+  width: 100%;
+}
+
+ .details{
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1c4e7ae0;
+  color: gold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  min-width: 545px;
+}
+.details .points{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+.details .explainations{
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  display: flex;
+  font-size: 0.75rem;
+  flex-direction: row;
+ 
+}
+
+.details .points div{
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  font-family: "Roboto", Sans-serif;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  transition:  all ease 0.6s;
+}
+.details .points div p{
+  margin: 0.25rem;
+  text-align: center;
+}
+
+.details .explainations div{
+  display: flex;
+  padding: 0.25rem;
+  font-family: "Roboto", Sans-serif;
+  display: none;
+overflow:hidden;
+
+}
+
+
+.details .explainations .exps{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.details .explainations .exp{
+  display: flex;
+  width: 6rem;
+  align-items: center;
+  flex-direction: column;
+  animation: anima 1.5s;
+}
+@keyframes anima{
+  from{
+filter: opacity(0);
+  }to{
+    filter: opacity(1);
+     
+  }
+}
+.details .explainations .exp i{
+font-size: 2.5rem;
+color: gold;}
+
+
+
+
+.details .points div:hover{
+
+  background-color: #00000030;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+.details .points .active{
+ 
+  background-color: #00000030;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  filter: drop-shadow(2px 6px 6px black);
+}
+
+      .details .explainations .active{
+        display: flex;
+        width:100%;
+        height: 100%;
+        background-color: #00000030;
+        border-radius: 15px;
+        color: white;
+
+      }
+      @media screen and (max-width: 1024px){
+        .mdl-dialog{
+          width: 60%;
+        }
+
+      }
+      @media screen and (max-width: 900px){
+        .mdl-dialog{
+          width: 65%;
+        }
+
+      }
+      @media screen and (max-width: 600px){
+        .mdl-dialog{
+          width: 75%;
+        }
+
+      }
+      @media screen and (max-width: 400px){
+        .mdl-dialog{
+          width: 90%;
+        }
+
+      }
+
+      @media screen and (max-width: 480px){
+      .details .points {
+        font-size: 0.75rem;}
+      
+        .details .explainations .active {
+          border-radius: 0 0 15px 15px;}
+         
+      }

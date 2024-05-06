@@ -1,0 +1,109 @@
+  footer{
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    background-color: #383737;
+    color: white;
+    padding: 1.6rem;
+  }
+  footer p{
+    padding: 0.8rem;
+  }
+  footer .first {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    padding: 0.5rem;
+  }
+  footer .first .contact{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  footer .first .social-link{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.6rem;
+    flex-direction: column;
+    margin-top: 1.6rem;
+  }
+  footer  .social-link .social-icon ul{
+    display: flex;
+    list-style-type: none;
+  }
+  footer  .social-link .social-icon ul li{
+  margin: 0.8rem;
+  font-size: 150%;
+ 
+  
+  }
+  footer  .social-link .social-icon ul li a{
+  border: 2px solid white;
+  padding: 0.7rem;
+  border-radius: 100%;}
+  footer .second {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem
+  }
+  
+  footer .second .sewa{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  footer  .second .sewa ul{
+    list-style-type: none;
+  }
+  footer .second .address{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.6rem;
+  }
+  footer  a{
+    text-decoration: none;
+    color: white;
+  
+  }
+  footer  a:hover{
+    color: #bdbaba;
+    transition: all 0.3s ease;
+  }
+  @media screen and (max-width: 1024px) {
+  
+    footer{
+      flex-direction: column;
+      font-size: 1.5rem;
+    }
+ 
+  
+  }
+  @media screen and (max-width: 480px) {
+    footer{
+      font-size: 1.3rem;
+    }
+  footer .first{
+    flex-direction: column;
+  }
+  footer .second{
+    flex-direction: column;
+
+  }
+  footer p{
+    padding: 0;
+  }
+}

@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri' , 'Trebuchet MS', sans-serif;  
+  
+}
+html{
+  font-size: 10px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+.logo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 0.8rem;
+  
+}
+.logo h3{
+  color: #b3a05d;
+  font-family: "Roboto", Sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+}
+.logo img{
+  height: 7rem;
+  width: 12rem;
+}
+.contact_info{
+  display: flex;
+align-items: center;
+padding-right:1rem;
+margin-right: 2rem;
+}
+.contact_info a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 15px;
+  color:#6e6969;;
+}
+.contact_info .social_icons{
+  display: flex;
+
+}
+.header  a:hover{
+  color: #bdbaba;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 780px){
+  .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 12rem;
+    align-items: center;
+  }
+  .logo {
+   
+    margin-left: 0rem;
+    margin-top: 0.8rem;
+}
+  .header .contact_info{
+    align-items: center;
+    padding-right:0;
+  }
+  .contact_info {
+   
+    margin-right: 0rem;
+}
+  
+}
+@media screen and (max-width: 480px){
+  .header{
+height: 18rem;
+  }
+.header .logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .contact_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  height: 5rem;
+  width: 8rem;
+}
+
+}
+@media screen and (max-width: 500px){
+.logo h3{
+  font-size: 2rem;
+}
+}
